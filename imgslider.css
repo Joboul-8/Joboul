@@ -2,15 +2,17 @@
 .carousel,
 .Imgshowcase {
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* SCROLL TRACK */
 .track {
     display: flex;
+    flex-wrap: nowrap;
     gap: 15px;
 
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: auto;
     -webkit-overflow-scrolling: touch;
 
@@ -19,7 +21,7 @@
     scrollbar-width: none;/* Firefox */
 
 
-    width:max-content
+    width: 100%;
 }
 
 /* hide scrollbar (Chrome/Safari) */
@@ -35,7 +37,5 @@
     object-fit: contain;
     border-radius: 10px;
 
-    flex-shrink: 0;
-    user-select: none;
-    pointer-events: none;
+    flex: 0 0 auto;
 }

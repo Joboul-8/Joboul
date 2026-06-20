@@ -16,7 +16,10 @@
 
     cursor: grab;
 
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;/* Firefox */
+
+
+    width:max-content
 }
 
 /* hide scrollbar (Chrome/Safari) */

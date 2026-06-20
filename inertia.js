@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let autoScrollEnabled = true;
     const autoScrollSpeed = 0.5;
 
-    function getX(e) {
-        return e.pageX || e.touches?.[0]?.pageX || 0;
-    }
+function getX(e) {
+    return e.touches?.[0]?.pageX ?? e.pageX ?? 0;
+}
 
     function start(e) {
         isDown = true;

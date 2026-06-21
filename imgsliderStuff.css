@@ -23,7 +23,6 @@
 
     width: 100%;
 }
-
 /* hide scrollbar (Chrome/Safari) */
 .track::-webkit-scrollbar {
     display: none;
